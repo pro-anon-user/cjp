@@ -17,40 +17,62 @@ export default function HeadlessAudioEngine() {
     audioCtxRef.current = new AudioContextClass();
 
     // Create hidden audio elements for each track
+    const elements: HTMLAudioElement[] = [];
     AUDIO_TRACKS.forEach((src) => {
       const audio = new Audio(src);
       audio.loop = false;
       audio.preload = "auto";
       audio.style.display = "none";
       document.body.appendChild(audio);
-      audioElementsRef.current.push(audio);
+      elements.push(audio);
     });
+    audioElementsRef.current = elements;
 
     // Start playback when first track is ready
     const firstAudio = audioElementsRef.current[0];
-    firstAudio.addEventListener("canplaythrough", () => {
+    const handleCanPlayThrough = () => {
       if (!isPlayingRef.current) {
-        firstAudio.play().catch(e => console.error("Audio play failed:", e));
         isPlayingRef.current = true;
+        firstAudio.play().catch(e => console.error("Audio play failed:", e));
       }
-    });
+    };
+    firstAudio.addEventListener("canplaythrough", handleCanPlayThrough);
 
-    // Set up track switching
-    firstAudio.addEventListener("ended", () => {
+    // Set up track switching for all tracks
+    const handleTrackEnded = () => {
+      // Pause current track explicitly
+      const currentAudio = audioElementsRef.current[currentTrackIndexRef.current];
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+
+      // Switch to next track
       currentTrackIndexRef.current = (currentTrackIndexRef.current + 1) % AUDIO_TRACKS.length;
       const nextAudio = audioElementsRef.current[currentTrackIndexRef.current];
       nextAudio.currentTime = 0;
       nextAudio.play().catch(e => console.error("Audio play failed:", e));
+    };
+
+    // Attach end listener to all audio elements so the loop continues past track 2
+    audioElementsRef.current.forEach((audio) => {
+      audio.addEventListener("ended", handleTrackEnded);
     });
 
     return () => {
-      // Cleanup
-      audioElementsRef.current.forEach(audio => {
+      // Cleanup event listeners and DOM elements
+      if (elements[0]) {
+        elements[0].removeEventListener("canplaythrough", handleCanPlayThrough);
+      }
+      elements.forEach(audio => {
+        audio.removeEventListener("ended", handleTrackEnded);
         audio.pause();
-        document.body.removeChild(audio);
+        if (document.body.contains(audio)) {
+          document.body.removeChild(audio);
+        }
       });
-      if (audioCtxRef.current?.state !== 'closed') {
-        audioCtxRef.current?.close();
+      audioElementsRef.current = [];
+
+      if (audioCtxRef.current && audioCtxRef.current.state !== 'closed') {
+        audioCtxRef.current.close();
       }
     };
   }, []);
