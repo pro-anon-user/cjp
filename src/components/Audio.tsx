@@ -1,74 +1,59 @@
 import { useEffect, useRef } from "react";
 
 const AUDIO_TRACKS = [
-  "/audio/Naruto - Loneliness Riki リキ Remix.mp3",
-  "/audio/Naruto Shippuden - Loneliness Chenow Remix.mp3",
+  "/dashboard/audio/Naruto - Loneliness Riki リキ Remix.mp3",
+  "/dashboard/audio/Naruto Shippuden - Loneliness Chenow Remix.mp3",
 ];
 
 export default function HeadlessAudioEngine() {
-  const trackIndexRef = useRef<number>(0);
   const audioCtxRef = useRef<AudioContext | null>(null);
-  const currentSourceNodeRef = useRef<AudioBufferSourceNode | null>(null);
-  const gainNodeRef = useRef<GainNode | null>(null);
+  const currentTrackIndexRef = useRef(0);
+  const isPlayingRef = useRef(false);
+  const audioElementsRef = useRef<HTMLAudioElement[]>([]);
 
   useEffect(() => {
+    // Initialize audio context
     const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
     audioCtxRef.current = new AudioContextClass();
 
-    gainNodeRef.current = audioCtxRef.current.createGain();
-    gainNodeRef.current.connect(audioCtxRef.current.destination);
-    gainNodeRef.current.gain.setValueAtTime(1, audioCtxRef.current.currentTime);
+    // Create hidden audio elements for each track
+    AUDIO_TRACKS.forEach((src) => {
+      const audio = new Audio(src);
+      audio.loop = false;
+      audio.preload = "auto";
+      audio.style.display = "none";
+      document.body.appendChild(audio);
+      audioElementsRef.current.push(audio);
+    });
 
-    streamAndDecodeTrack(trackIndexRef.current);
+    // Start playback when first track is ready
+    const firstAudio = audioElementsRef.current[0];
+    firstAudio.addEventListener("canplaythrough", () => {
+      if (!isPlayingRef.current) {
+        firstAudio.play().catch(e => console.error("Audio play failed:", e));
+        isPlayingRef.current = true;
+      }
+    });
+
+    // Set up track switching
+    firstAudio.addEventListener("ended", () => {
+      currentTrackIndexRef.current = (currentTrackIndexRef.current + 1) % AUDIO_TRACKS.length;
+      const nextAudio = audioElementsRef.current[currentTrackIndexRef.current];
+      nextAudio.currentTime = 0;
+      nextAudio.play().catch(e => console.error("Audio play failed:", e));
+    });
 
     return () => {
-      haltCurrentBuffer();
-      if (audioCtxRef.current) {
-        audioCtxRef.current.close();
+      // Cleanup
+      audioElementsRef.current.forEach(audio => {
+        audio.pause();
+        document.body.removeChild(audio);
+      });
+      if (audioCtxRef.current?.state !== 'closed') {
+        audioCtxRef.current?.close();
       }
     };
   }, []);
-
-  const streamAndDecodeTrack = async (index: number) => {
-    if (!audioCtxRef.current || !gainNodeRef.current) return;
-
-    try {
-      const response = await fetch(AUDIO_TRACKS[index]);
-      const arrayBuffer = await response.arrayBuffer();
-
-      const audioBuffer = await audioCtxRef.current.decodeAudioData(arrayBuffer);
-
-      haltCurrentBuffer();
-
-      const sourceNode = audioCtxRef.current.createBufferSource();
-      sourceNode.buffer = audioBuffer;
-
-      sourceNode.connect(gainNodeRef.current);
-      currentSourceNodeRef.current = sourceNode;
-
-      sourceNode.onended = () => {
-        const nextIndex = (trackIndexRef.current + 1) % AUDIO_TRACKS.length;
-        trackIndexRef.current = nextIndex;
-        streamAndDecodeTrack(nextIndex);
-      };
-
-      sourceNode.start(0);
-    } catch (error) {
-      console.error(error)
-    }
-  };
-
-  const haltCurrentBuffer = () => {
-    if (currentSourceNodeRef.current) {
-      try {
-        currentSourceNodeRef.current.stop();
-        currentSourceNodeRef.current.disconnect();
-      } catch (e) {
-        console.error(e)
-      }
-      currentSourceNodeRef.current = null;
-    }
-  };
 
   return null;
 }
