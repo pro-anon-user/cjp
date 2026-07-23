@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 
 const AUDIO_TRACKS = [
-  "/dashboard/audio/Naruto - Loneliness Riki リキ Remix.mp3",
-  "/dashboard/audio/Naruto Shippuden - Loneliness Chenow Remix.mp3",
+  "/cjp/audio/Naruto - Loneliness Riki リキ Remix.mp3",
+  "/cjp/audio/Naruto Shippuden - Loneliness Chenow Remix.mp3",
 ];
 
 export default function HeadlessAudioEngine() {
