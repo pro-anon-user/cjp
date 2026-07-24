@@ -11,27 +11,31 @@ export default function Gallery() {
           Footage, not filters
         </h2>
         <p className="mb-10 max-w-2xl leading-relaxed text-[#948F82]">
-          Raw footage from the ground. Replace these placeholders with real videos and photos of the march, injuries, and police action. Let the visuals speak.
+          Raw footage from the ground. Let the visuals speak.
         </p>
 
-        {false ? (
+        {true ? (
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {slots.map((slot, i) => (
-              // USER: Replace the src below with real, rights-cleared footage for this protest.
-              // Keep captions accurate and dated — do not caption unverified footage as confirmed.
               <figure
                 key={i}
                 className="group overflow-hidden rounded-sm border border-[#2A2620] bg-[#0B0B0C]"
               >
-                <img
-                  src={`https://dummyimage.com/640x420/141317/948F82&text=${encodeURIComponent(
-                    slot.label
-                  )}`}
-                  alt={`Placeholder — replace with real, rights-cleared footage of: ${slot.label}`}
-                  loading="lazy"
-                  className="h-48 w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 sm:h-56"
-                />
-                {/* <!-- USER: Replace with actual protest footage URL --> */}
+                {slot.type == "video" ? (
+                  <video
+                    src={`${encodeURIComponent(slot.label)}`}
+                    // autoPlay={true}
+                    controls={true}
+                    className="h-48 w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 sm:h-56"
+                  />
+                ) : (
+                  <img
+                    src={`${encodeURIComponent(slot.label)}`}
+                    alt={`Placeholder — replace with real, rights-cleared footage of: ${slot.label}`}
+                    loading="lazy"
+                    className="h-48 w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 sm:h-56"
+                  />
+                )}
                 <figcaption className="flex items-center justify-between border-t border-[#2A2620] px-4 py-3">
                   <span className="text-sm text-[#F3EFE6]">{slot.label}</span>
                   <span className="font-[IBM_Plex_Mono,monospace] text-[10px] uppercase tracking-widest text-[#E8A324]">

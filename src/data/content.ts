@@ -88,12 +88,7 @@ export const ledger: LedgerEntry[] = [
 ];
 
 export const slots = [
-    { label: "Jantar Mantar sit-in", tag: "Photo" },
-    { label: "'Chalo Sansad' march, 20 Jul", tag: "Video" },
-    { label: "Wangchuk's hunger strike", tag: "Photo" },
-    { label: "Hospital ward, RML/LHMC", tag: "Photo" },
-    { label: "Tear gas response, Jantar Mantar", tag: "Video" },
-    { label: "Parliament floor debate", tag: "Clip" },
+    { label: "In Bihar's Begusarai, shots have been fired at students.", tag: "Shots Fired", type: "video", url: "/cjp/videos/shots fired.mp4" },
 ];
 
 export const pradhanNote = {
