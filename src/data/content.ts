@@ -93,7 +93,7 @@ export const slots = [
     { label: "Delhi police preparing to assult peaceful protesters.", tag: "Assult", type: "video", url: "/cjp/videos/preparation for assult.mp4", source: "https://x.com/ChekrishnaCk/status/2080488258157613306" },
     { label: "Use of Pellet Gun", tag: "Attempted murder", type: "video", url: "/cjp/videos/pellet gun.mp4", source: "https://x.com/Delhiite_/status/2080596953470300285" },
     { label: "Mis-use of Aadhar data by government officials.", tag: "Privacy Violation", type: "video", url: "/cjp/videos/misuse of adhar data.mp4", source: "https://x.com/azizkavish/status/2080353214021632105" },
-    { label: "Propaganda through misappropriation of public funds.", tag: "State-Sponsored Censorship", type: "video", url: "/cjp/videos/govt bribary.mp4", source: "https://x.com/voicesindians/status/2080360301082591269" },
+    { label: "State-Orchestrated Disinformation", tag: "State-Sponsored Censorship", type: "video", url: "/cjp/videos/govt bribary.mp4", source: "https://x.com/voicesindians/status/2080360301082591269" },
     { label: "Propaganda through misappropriation of public funds.", tag: "State-Sponsored Censorship", type: "video", url: "/cjp/videos/bribary.mp4", source: "https://x.com/voicesindians/status/2080472228936949989" },
     { label: "Official misconduct / Malfeasance in office", tag: "Theft under color of authority", type: "video", url: "/cjp/videos/foods stolen.mp4", source: "https://x.com/mr_mayank/status/2080552934958670209" },
     { label: "16-Year-Old left critically injured during a protest.", tag: "Grievous bodily harm", type: "video", url: "/cjp/videos/brink of death.mp4", source: "https://x.com/Vishwaguru2026/status/2080602609514377688" },
