@@ -15,6 +15,8 @@ import {
 } from "./components/Dialog";
 import { useState } from "react";
 
+const ENABLE_BG_AUDIO = false;
+
 export default function App() {
   const [open, setOpen] = useState(true);
 
@@ -54,7 +56,7 @@ export default function App() {
         <Gallery />
       </main>
       <Footer />
-      {open == false && (
+      {open == false && ENABLE_BG_AUDIO && (
         <HeadlessAudioEngine />
       )}
     </div>
