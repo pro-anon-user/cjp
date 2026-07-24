@@ -130,6 +130,11 @@ export const ledger: LedgerEntry[] = [
         protesterAccount: "Government officials were involved in stealing food and other resources meant for protesters or the public (official misconduct/malfeasance).",
         sourceNote: "Video evidence: https://x.com/mr_mayank/status/2080552934958670209",
     },
+    {
+        claim: "Was the blocking of BitChat's open-source code on GitHub unconstitutional?",
+        protesterAccount: "The government's order to GitHub to remove BitChat repositories is illegal and constitutes authoritarian censorship by a rogue government. The notice bypasses legal safeguards and targets citizens’ ability to speak when the state cuts off connectivity.",
+        sourceNote: "Internet Freedom Foundation statement, 24 July 2026. Link: https://x.com/internetfreedom/status/2080586673977438351?s=20",
+    },
 ];
 
 export const slots = [
@@ -147,6 +152,7 @@ export const slots = [
     { label: "Use of modified batons with nails protruding through them.", tag: "Attempted murder", type: "video", url: "/cjp/videos/attempted murder.mp4", source: "https://x.com/MuraliGorati1/status/2080287954761846824?s=20" },
     { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human rights violation.mp4", source: "https://x.com/rishikeshlaw/status/2080583433903071654" },
     { label: "Police, CRPF, and RAF personnel deployed around the Jantar Mantar protests have been asked to remove their name tags.", tag: "Contempt of Court", type: "image", url: "/cjp/images/illegal act.png", source: "https://x.com/SaketGokhale/status/2080660880887632005?s=20" },
+    { label: "BJP government orders GitHub to remove BitChat.", tag: "Authoritarian censorship", type: "image", url: "/cjp/images/bitchat.png", source: "https://x.com/internetfreedom/status/2080586673977438351?s=20" },
 ];
 
 export const pradhanNote = {
