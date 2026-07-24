@@ -29,6 +29,7 @@ export default function Gallery() {
                 />
               ) : (
                 <img
+                  onClick={() => window.open(slot.url, '_blank', 'noopener,noreferrer')}
                   src={slot.url}
                   alt={slot.label}
                   loading="lazy"
