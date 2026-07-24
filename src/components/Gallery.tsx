@@ -23,14 +23,14 @@ export default function Gallery() {
               >
                 {slot.type == "video" ? (
                   <video
-                    src={`${encodeURIComponent(slot.url)}`}
+                    src={slot.url}
                     // autoPlay={true}
                     controls={true}
                     className="h-48 w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 sm:h-56"
                   />
                 ) : (
                   <img
-                    src={`${encodeURIComponent(slot.url)}`}
+                    src={slot.url}
                     alt={`Placeholder — replace with real, rights-cleared footage of: ${slot.label}`}
                     loading="lazy"
                     className="h-48 w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 sm:h-56"
