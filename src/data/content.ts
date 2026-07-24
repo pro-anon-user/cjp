@@ -146,6 +146,7 @@ export const slots = [
     { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human right violation.mp4", source: "https://x.com/TheDeshBhakt/status/2080344014705021021" },
     { label: "Use of modified batons with nails protruding through them.", tag: "Attempted murder", type: "video", url: "/cjp/videos/attempted murder.mp4", source: "https://x.com/MuraliGorati1/status/2080287954761846824?s=20" },
     { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human rights violation.mp4", source: "https://x.com/rishikeshlaw/status/2080583433903071654" },
+    { label: "Police, CRPF, and RAF personnel deployed around the Jantar Mantar protests have been asked to remove their name tags.", tag: "Contempt of Court", type: "image", url: "/cjp/images/illegal act.png", source: "https://x.com/SaketGokhale/status/2080660880887632005?s=20" },
 ];
 
 export const pradhanNote = {
