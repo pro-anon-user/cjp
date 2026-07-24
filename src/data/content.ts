@@ -95,6 +95,8 @@ export const slots = [
     { label: "Mis-use of Aadhar data by government officials.", tag: "Privacy Violation", type: "video", url: "/cjp/videos/misuse of adhar data.mp4", source: "https://x.com/azizkavish/status/2080353214021632105" },
     { label: "Extortion under color of official right.", tag: "Bribery", type: "video", url: "/cjp/videos/govt bribary.mp4", source: "https://x.com/voicesindians/status/2080360301082591269" },
     { label: "Official misconduct / Malfeasance in office", tag: "Theft under color of authority", type: "video", url: "/cjp/videos/foods stolen.mp4", source: "https://x.com/mr_mayank/status/2080552934958670209" },
+    { label: "16-Year-Old left critically injured during a protest.", tag: "Grievous bodily harm", type: "video", url: "/cjp/videos/brink of death.mp4", source: "https://x.com/Vishwaguru2026/status/2080602609514377688" },
+    { label: "Peaceful protesters assulted by Police.", tag: "Assult", type: "video", url: "/cjp/videos/assult.mp4", source: "https://x.com/ChapraZila/status/2080575312417677586" },
 ];
 
 export const pradhanNote = {
