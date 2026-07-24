@@ -98,6 +98,7 @@ export const slots = [
     { label: "Official misconduct / Malfeasance in office", tag: "Theft under color of authority", type: "video", url: "/cjp/videos/foods stolen.mp4", source: "https://x.com/mr_mayank/status/2080552934958670209" },
     { label: "16-Year-Old left critically injured during a protest.", tag: "Grievous bodily harm", type: "video", url: "/cjp/videos/brink of death.mp4", source: "https://x.com/Vishwaguru2026/status/2080602609514377688" },
     { label: "Peaceful protesters assulted by Police.", tag: "Assult", type: "video", url: "/cjp/videos/assult.mp4", source: "https://x.com/ChapraZila/status/2080575312417677586" },
+    { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human right violation.mp4", source: "https://x.com/TheDeshBhakt/status/2080344014705021021" },
 ];
 
 export const pradhanNote = {
