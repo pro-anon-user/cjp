@@ -88,7 +88,7 @@ export const ledger: LedgerEntry[] = [
 ];
 
 export const slots = [
-    { label: "In Bihar's Begusarai, shots have been fired at students.", tag: "Shots Fired", type: "video", url: "/cjp/videos/shots fired.mp4" },
+    { label: "In Bihar's Jehanabad, shots have been fired.", tag: "Shots Fired", type: "video", url: "/cjp/videos/shots fired.mp4" },
 ];
 
 export const pradhanNote = {
