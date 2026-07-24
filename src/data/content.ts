@@ -99,6 +99,8 @@ export const slots = [
     { label: "16-Year-Old left critically injured during a protest.", tag: "Grievous bodily harm", type: "video", url: "/cjp/videos/brink of death.mp4", source: "https://x.com/Vishwaguru2026/status/2080602609514377688" },
     { label: "Peaceful protesters assulted by Police.", tag: "Assult", type: "video", url: "/cjp/videos/assult.mp4", source: "https://x.com/ChapraZila/status/2080575312417677586" },
     { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human right violation.mp4", source: "https://x.com/TheDeshBhakt/status/2080344014705021021" },
+    { label: "Use of modified batons with nails protruding through them.", tag: "Attempted murder", type: "video", url: "/cjp/videos/attempted murder.mp4", source: "https://x.com/MuraliGorati1/status/2080287954761846824?s=20" },
+    { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human rights violation.mp4", source: "https://x.com/rishikeshlaw/status/2080583433903071654" },
 ];
 
 export const pradhanNote = {

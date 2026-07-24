@@ -24,14 +24,15 @@ export default function Gallery() {
                 <video
                   src={slot.url}
                   controls={true}
-                  className="h-48 w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 sm:h-56"
+                  playsInline={true}
+                  className="h-48 w-full object-cover sm:grayscale transition-all duration-300 sm:group-hover:grayscale-0 sm:h-56"
                 />
               ) : (
                 <img
                   src={slot.url}
                   alt={`Placeholder — replace with real, rights-cleared footage of: ${slot.label}`}
                   loading="lazy"
-                  className="h-48 w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 sm:h-56"
+                  className="h-48 w-full object-cover sm:grayscale transition-all duration-300 sm:group-hover:grayscale-0 sm:h-56"
                 />
               )}
               <figcaption className="flex items-center justify-between border-t border-[#2A2620] px-4 py-3">
