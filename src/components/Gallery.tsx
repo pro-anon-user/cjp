@@ -30,7 +30,7 @@ export default function Gallery() {
               ) : (
                 <img
                   src={slot.url}
-                  alt={`Placeholder — replace with real, rights-cleared footage of: ${slot.label}`}
+                  alt={slot.label}
                   loading="lazy"
                   className="h-48 w-full object-cover sm:grayscale transition-all duration-300 sm:group-hover:grayscale-0 sm:h-56"
                 />

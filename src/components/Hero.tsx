@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-4xl">
         <div className="mb-6 inline-flex items-center gap-2 rounded-sm border border-[#D6362E]/50 bg-[#D6362E]/10 px-3 py-1 font-[IBM_Plex_Mono,monospace] text-[11px] uppercase tracking-widest text-[#E8A324]">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#D6362E]" />
-          Updated 23 July 2026
+          Updated 25 July 2026
         </div>
 
         <h1 className="font-[Anton,sans-serif] text-[15vw] leading-[0.85] tracking-tight text-[#F3EFE6] sm:text-7xl md:text-8xl">

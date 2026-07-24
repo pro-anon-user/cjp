@@ -81,9 +81,54 @@ export const ledger: LedgerEntry[] = [
         sourceNote: "The Hindu, Outlook India, BOOM Live — 21–22 July 2026",
     },
     {
-        claim: "Access to justice blocked?",
-        protesterAccount: "Protesters were being heavily restricted from contacting lawyers and facing surveillance/intimidation during and after the march.",
-        sourceNote: null,
+        claim: "Were shots fired in Jehanabad during the protests?",
+        protesterAccount: "Shots have been fired in Bihar's Jehanabad amid the ongoing protests.",
+        sourceNote: "Video evidence: https://x.com/preeti_dog22864/status/2080513437122396359",
+    },
+    {
+        claim: "Did police in civil dress manhandle a female protester?",
+        protesterAccount: "Police in civil dress manhandled a girl during the protest, amounting to sexual harassment.",
+        sourceNote: "Video evidence: https://x.com/Vtxt21/status/2080487498393022834",
+    },
+    {
+        claim: "Was Delhi Police preparing to assault peaceful protesters?",
+        protesterAccount: "Delhi police were seen preparing to assault peaceful protesters.",
+        sourceNote: "Video evidence: https://x.com/ChekrishnaCk/status/2080488258157613306",
+    },
+    {
+        claim: "Were modified batons with nails used against protesters?",
+        protesterAccount: "Police used modified batons with nails protruding through them, posing a severe risk of grievous injury or death.",
+        sourceNote: "Video evidence: https://x.com/MuraliGorati1/status/2080287954761846824",
+    },
+    {
+        claim: "Was a 16-year-old left critically injured during the protest?",
+        protesterAccount: "A 16-year-old was left critically injured and on the brink of death after being assaulted during the protest.",
+        sourceNote: "Video evidence: https://x.com/Vishwaguru2026/status/2080602609514377688",
+    },
+    {
+        claim: "Were peaceful protesters assaulted by police?",
+        protesterAccount: "Peaceful protesters were brutally assaulted by police personnel.",
+        sourceNote: "Video evidence: https://x.com/ChapraZila/status/2080575312417677586",
+    },
+    {
+        claim: "Were lawyers blocked from accessing detained protesters?",
+        protesterAccount: "Lawyers were physically blocked from meeting and providing legal access to detained protesters, violating basic human rights.",
+        sourceNote: "Multiple videos: https://x.com/TheDeshBhakt/status/2080344014705021021 and https://x.com/rishikeshlaw/status/2080583433903071654",
+    },
+    {
+        claim: "Did government officials misuse Aadhaar data?",
+        protesterAccount: "Government officials were caught misusing Aadhaar data, raising serious privacy violation concerns.",
+        sourceNote: "Video evidence: https://x.com/azizkavish/status/2080353214021632105",
+    },
+    {
+        claim: "Was there state-orchestrated disinformation and bribery?",
+        protesterAccount: "Evidence shows state-sponsored disinformation campaigns and bribery using public funds to manipulate narratives.",
+        sourceNote: "Video evidence: https://x.com/voicesindians/status/2080360301082591269 and https://x.com/voicesindians/status/2080472228936949989",
+    },
+    {
+        claim: "Did officials engage in theft under color of authority?",
+        protesterAccount: "Government officials were involved in stealing food and other resources meant for protesters or the public (official misconduct/malfeasance).",
+        sourceNote: "Video evidence: https://x.com/mr_mayank/status/2080552934958670209",
     },
 ];
 
