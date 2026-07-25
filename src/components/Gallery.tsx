@@ -23,6 +23,7 @@ export default function Gallery() {
               {slot.type == "video" ? (
                 <video
                   src={slot.url}
+                  data-source={slot.source}
                   controls={true}
                   playsInline={true}
                   className="h-48 w-full object-cover sm:grayscale transition-all duration-300 sm:group-hover:grayscale-0 sm:h-56"
@@ -32,6 +33,7 @@ export default function Gallery() {
                   onClick={() => window.open(slot.url, '_blank', 'noopener,noreferrer')}
                   src={slot.url}
                   alt={slot.label}
+                  data-source={slot.source}
                   loading="lazy"
                   className="cursor-pointer h-48 w-full object-cover sm:grayscale transition-all duration-300 sm:group-hover:grayscale-0 sm:h-56"
                 />

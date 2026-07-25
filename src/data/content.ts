@@ -142,79 +142,84 @@ export interface LedgerEntry {
 
 export const ledger: LedgerEntry[] = [
     {
-        claim: "Is the BJP government violating the right to life by using pellet guns on protesters?",
+        claim: "Is the BJP government committing attempted murder?",
         protesterAccount: "Multiple injured protesters and hospital records show clear pellet wounds. Videos appear to show CRPF/RAF personnel firing pump-action guns. This is the first reported use in Delhi protests.",
         sourceNote: "The Hindu, Outlook India, BOOM Live — 21–22 July 2026",
     },
     {
-        claim: "Is the BJP government violating the right to life by allowing shots to be fired on protesters?",
+        claim: "Is the BJP government authorizing lethal force against protesters?",
         protesterAccount: "Shots have been fired in Bihar's Jehanabad amid the ongoing protests.",
         sourceNote: "Video evidence: https://x.com/preeti_dog22864/status/2080513437122396359",
     },
     {
-        claim: "Is the BJP government violating the right to dignity and bodily integrity through sexual harassment by police?",
+        claim: "Is the BJP government permitting sexual harassment by police?",
         protesterAccount: "Police in civil dress manhandled a girl during the protest, amounting to sexual harassment.",
         sourceNote: "Video evidence: https://x.com/Vtxt21/status/2080487498393022834",
     },
     {
-        claim: "Is the BJP government violating the right to peaceful assembly by preparing to assault protesters?",
+        claim: "Is the BJP government preparing organized assault on peaceful assembly?",
         protesterAccount: "Delhi police were seen preparing to assault peaceful protesters.",
         sourceNote: "Video evidence: https://x.com/ChekrishnaCk/status/2080488258157613306",
     },
     {
-        claim: "Is the BJP government violating the right to life by using modified batons with nails?",
+        claim: "Is the BJP government authorizing the use of lethal improvised weapons?",
         protesterAccount: "Police used modified batons with nails protruding through them, posing a severe risk of grievous injury or death.",
         sourceNote: "Video evidence: https://x.com/MuraliGorati1/status/2080287954761846824",
     },
     {
-        claim: "Is the BJP government violating the right to life of a minor by leaving a 16-year-old critically injured?",
+        claim: "Is the BJP government responsible for the attempted murder of a minor?",
         protesterAccount: "A 16-year-old was left critically injured and on the brink of death after being assaulted during the protest.",
         sourceNote: "Video evidence: https://x.com/Vishwaguru2026/status/2080602609514377688",
     },
     {
-        claim: "Is the BJP government violating the right to peaceful assembly by assaulting protesters?",
+        claim: "Is the BJP government ordering brutal assault on peaceful protesters?",
         protesterAccount: "Peaceful protesters were brutally assaulted by police personnel.",
         sourceNote: "Video evidence: https://x.com/ChapraZila/status/2080575312417677586",
     },
     {
-        claim: "Is the BJP government violating the right to legal representation by blocking lawyers?",
+        claim: "Is the BJP government obstructing the right to legal counsel?",
         protesterAccount: "Lawyers were physically blocked from meeting and providing legal access to detained protesters, violating basic human rights.",
         sourceNote: "Multiple videos: https://x.com/TheDeshBhakt/status/2080344014705021021 and https://x.com/rishikeshlaw/status/2080583433903071654",
     },
     {
-        claim: "Is the BJP government violating the right to privacy by misusing Aadhaar data?",
+        claim: "Is the BJP government misusing Aadhaar data?",
         protesterAccount: "Government officials were caught misusing Aadhaar data, raising serious privacy violation concerns.",
         sourceNote: "Video evidence: https://x.com/azizkavish/status/2080353214021632105",
     },
     {
-        claim: "Is the BJP government violating the right to free speech through state-orchestrated disinformation?",
+        claim: "Is the BJP government running state-sponsored disinformation campaigns?",
         protesterAccount: "Evidence shows state-sponsored disinformation campaigns and bribery using public funds to manipulate narratives.",
         sourceNote: "Video evidence: https://x.com/voicesindians/status/2080360301082591269 & https://x.com/voicesindians/status/2080472228936949989",
     },
     {
-        claim: "Is the BJP government violating the rule of law through theft under color of authority?",
+        claim: "Is the BJP government enabling theft under color of authority?",
         protesterAccount: "Government officials were involved in stealing food and other resources meant for protesters or the public (official misconduct/malfeasance).",
         sourceNote: "Video evidence: https://x.com/mr_mayank/status/2080552934958670209",
     },
     {
-        claim: "Is the BJP government an authoritarian government?",
+        claim: "Is the BJP government engaging in authoritarian censorship?",
         protesterAccount: "The government's order to GitHub to remove BitChat repositories is illegal and constitutes authoritarian censorship by a rogue government. The notice bypasses legal safeguards and targets citizens’ ability to speak when the state cuts off connectivity.",
         sourceNote: "Internet Freedom Foundation statement, 24 July 2026. Link: https://x.com/internetfreedom/status/2080586673977438351?s=20",
     },
     {
-        claim: "Is the BJP government violating the right to freedom of movement through wrongful confinement?",
+        claim: "Is the BJP government imposing wrongful confinement?",
         protesterAccount: "Permanent barricades are being erected across all routes in and out of Jantar Mantar, confining protesters and restricting their movement.",
         sourceNote: "Video evidence: https://x.com/rishikeshlaw/status/2080868341661741437",
     },
     {
-        claim: "Is the BJP government violating the right to life by denying food and water to peaceful protesters?",
+        claim: "Is the BJP government imposing collective starvation?",
         protesterAccount: "Police are stopping food and even water from reaching the protest site, illegally questioning delivery workers. No law permits this form of collective starvation.",
         sourceNote: "Video evidence: https://x.com/Nher_who/status/2080920728829132915 & Photo evidence: https://x.com/JournoAshutosh/status/2080683843783471538",
     },
     {
-        claim: "Is the BJP government engaging in institutional disinformation by utilizing official police channels to mask a ground-level blockade of essential supplies?",
+        claim: "Is the BJP government engaging in institutional gaslighting?",
         protesterAccount: "Delhi Police issues an official clarification denying any blanket ban on app-based food deliveries, calling the reports 'factually incorrect'. Yet delivery apps continue showing the Jantar Mantar area as restricted, with food and water still being stopped on the ground.",
         sourceNote: "Official post: https://x.com/DelhiPolice/status/2080936991613661264",
+    },
+    {
+        claim: "Is the BJP government committing attempted murder of student protesters?",
+        protesterAccount: "Reports claim police opened fire on students during a protest in Siwan, Bihar. Some posts shows the use of AK-47 rifles. Video shows chaotic scenes and a spent cartridge.",
+        sourceNote: "Video evidence: https://x.com/TheCockroachIND/status/2080980942685184438",
     },
 ];
 
@@ -358,6 +363,13 @@ export const slots = [
         type: "image",
         url: "/cjp/images/delhi police in denial.png",
         source: "https://x.com/DelhiPolice/status/2080936991613661264",
+    },
+    {
+        label: "Police open fire on student protesters in Siwan, Bihar",
+        tag: "Attempted Murder",
+        type: "video",
+        url: "/cjp/videos/shots fired at students.mp4",
+        source: "https://x.com/TheCockroachIND/status/2080980942685184438",
     },
 ];
 
