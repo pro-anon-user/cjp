@@ -85,6 +85,24 @@ export const timeline: TimelineEvent[] = [
         tag: "repression",
     },
     {
+        date: "24 July 2026",
+        title: "Food supply to protest site blocked",
+        body: "Delhi Traffic Police and Delhi Police issue conflicting orders stopping food deliveries to Jantar Mantar. Gig workers are halted and questioned while trying to deliver basic supplies to protesters.",
+        tag: "repression",
+    },
+    {
+        date: "24 July 2026",
+        title: "Police block students from reaching Jantar Mantar",
+        body: "Police stop students at multiple points across Delhi, preventing them from reaching the protest site. When media questions the action, officers claim the press is interfering in their work.",
+        tag: "repression",
+    },
+    {
+        date: "24 July 2026",
+        title: "Judge reprimands police over illegal 3-hour detention",
+        body: "A judge sharply questions a police officer for detaining protesters for over three hours without any accusation and without following seizure protocol. The court orders a departmental inquiry, stating the action was deliberate, though the officer is ultimately shown leniency after his lawyer intervenes.",
+        tag: "escalation",
+    },
+    {
         date: "24–25 July 2026",
         title: "Permanent barricades seal the protest site",
         body: "Authorities begin erecting permanent barricades on all routes in and out of Jantar Mantar, effectively confining protesters and restricting freedom of movement.",
@@ -101,6 +119,12 @@ export const timeline: TimelineEvent[] = [
         title: "Nationwide candle march announced",
         body: "CJP calls for a silent nationwide candle march on Sunday, 26 July at 6 PM outside every District Collector’s office across India, in memory of the injured and in protest against police brutality.",
         tag: "escalation",
+    },
+    {
+        date: "25 July 2026",
+        title: "Police stop even water from reaching protesters",
+        body: "Officers are seen illegally intercepting gig workers and blocking food and water deliveries to the protest site. Protesters compare the tactic to collective punishment.",
+        tag: "repression",
     },
 ];
 
@@ -159,7 +183,7 @@ export const ledger: LedgerEntry[] = [
     {
         claim: "Is the BJP government violating the right to free speech through state-orchestrated disinformation?",
         protesterAccount: "Evidence shows state-sponsored disinformation campaigns and bribery using public funds to manipulate narratives.",
-        sourceNote: "Video evidence: https://x.com/voicesindians/status/2080360301082591269 and https://x.com/voicesindians/status/2080472228936949989",
+        sourceNote: "Video evidence: https://x.com/voicesindians/status/2080360301082591269 & https://x.com/voicesindians/status/2080472228936949989",
     },
     {
         claim: "Is the BJP government violating the rule of law through theft under color of authority?",
@@ -175,6 +199,11 @@ export const ledger: LedgerEntry[] = [
         claim: "Is the BJP government violating the right to freedom of movement through wrongful confinement?",
         protesterAccount: "Permanent barricades are being erected across all routes in and out of Jantar Mantar, confining protesters and restricting their movement.",
         sourceNote: "Video evidence: https://x.com/rishikeshlaw/status/2080868341661741437",
+    },
+    {
+        claim: "Is the BJP government violating the right to life by denying food and water to peaceful protesters?",
+        protesterAccount: "Police are stopping food and even water from reaching the protest site, illegally questioning delivery workers. No law permits this form of collective starvation.",
+        sourceNote: "Video evidence: https://x.com/Nher_who/status/2080920728829132915 & Photo evidence: https://x.com/JournoAshutosh/status/2080683843783471538",
     },
 ];
 
@@ -290,6 +319,27 @@ export const slots = [
         type: "video",
         url: "/cjp/videos/wrongful confinement.mp4",
         source: "https://x.com/rishikeshlaw/status/2080868341661741437"
+    },
+    {
+        label: "Food deliveries to Jantar Mantar blocked by police",
+        tag: "Endangerment of Life",
+        type: "image",
+        url: "/cjp/videos/food blocked.png",
+        source: "https://x.com/JournoAshutosh/status/2080683843783471538",
+    },
+    {
+        label: "Police stopping students from reaching the protest site",
+        tag: "Wrongful Confinement",
+        type: "video",
+        url: "/cjp/videos/students blocked.mp4",
+        source: "https://x.com/moliticsindia/status/2080625913390326227",
+    },
+    {
+        label: "Police stopping food and water deliveries to protest site",
+        tag: "Endangerment of Life",
+        type: "video",
+        url: "/cjp/videos/food blocked.mp4",
+        source: "https://x.com/Nher_who/status/2080920728829132915",
     },
 ];
 
