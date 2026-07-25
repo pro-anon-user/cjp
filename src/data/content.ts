@@ -137,6 +137,18 @@ export const timeline: TimelineEvent[] = [
         title: "Government Accedes to CJP Demands; Jantar Mantar Protest Suspended",
         body: "Following intense civil pressure, the government officially conceded to the Citizens for Justice and Peace (CJP) demands. CJP leadership announced a successful conclusion and formal suspension of the demonstration.",
         tag: "aftermath"
+    },
+    {
+        "date": "July 25, 2026",
+        "title": "Pralhad Joshi Appointed as Minister of Education",
+        "body": "Union Minister Pralhad Joshi officially took charge of the Ministry of Education following the resignation of the previous minister.",
+        "tag": "aftermath"
+    },
+    {
+        "date": "July 25, 2026",
+        "title": "Opposition Ridicules Appointment of Pralhad Joshi as Education Minister",
+        "body": "Critics slammed the appointment of Pralhad Joshi, mocking the new Education Minister by circulating footage of him running away and refusing to engage when LoP Rahul Gandhi approached him to address a live press conference together. Source: https://x.com/RoshanKrRaii/status/2081033199631970466 & https://pro-anon-user.github.io/cjp/videos/new-edu-minister.mp4",
+        "tag": "aftermath"
     }
 ];
 
