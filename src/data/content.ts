@@ -126,6 +126,12 @@ export const timeline: TimelineEvent[] = [
         body: "Officers are seen illegally intercepting gig workers and blocking food and water deliveries to the protest site. Protesters compare the tactic to collective punishment.",
         tag: "repression",
     },
+    {
+        date: "25 July 2026",
+        title: "Education Minister submits resignation",
+        body: "Union Education Minister Dharmendra Pradhan sends his resignation letter to the Prime Minister.",
+        tag: "escalation",
+    },
 ];
 
 export interface LedgerEntry {
