@@ -4,6 +4,8 @@ const tagStyles: Record<string, string> = {
   origin: "text-[#948F82] border-[#948F82]/40",
   escalation: "text-[#E8A324] border-[#E8A324]/40",
   clash: "text-[#D6362E] border-[#D6362E]/40",
+  repression: "text-[#8B3A3A] border-[#8B3A3A]/40",
+  international: "text-[#5B8FA8] border-[#5B8FA8]/40",
   aftermath: "text-[#F3EFE6] border-[#F3EFE6]/30",
 };
 
@@ -11,6 +13,8 @@ const tagLabel: Record<string, string> = {
   origin: "Origin",
   escalation: "Escalation",
   clash: "Clash",
+  repression: "Repression",
+  international: "International",
   aftermath: "Aftermath",
 };
 

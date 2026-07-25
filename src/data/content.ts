@@ -2,7 +2,7 @@ export interface TimelineEvent {
     date: string;
     title: string;
     body: string;
-    tag: "origin" | "escalation" | "clash" | "aftermath";
+    tag: "origin" | "escalation" | "clash" | "aftermath" | "repression" | "international";
 }
 
 export const timeline: TimelineEvent[] = [
@@ -66,6 +66,42 @@ export const timeline: TimelineEvent[] = [
         body: "Movement pauses risky street marches to protect lives but continues the sit-in at Jantar Mantar. The fight for accountability is far from over.",
         tag: "aftermath",
     },
+    {
+        date: "23 July 2026",
+        title: "Internet blackout tightens around Jantar Mantar",
+        body: "Mobile internet is suspended multiple times in a 1.5 km radius around the protest site. Signal jammers are deployed. Students report having to walk kilometres just to send a message.",
+        tag: "repression",
+    },
+    {
+        date: "23 July 2026",
+        title: "Secret order targets BitChat",
+        body: "At 11:16 pm, I4C issues Notice No. 11072601011432 directing GitHub to remove BitChat repositories within three hours. The open-source Bluetooth mesh app was being used by protesters during shutdowns.",
+        tag: "repression",
+    },
+    {
+        date: "24 July 2026",
+        title: "IFF exposes the censorship",
+        body: "Internet Freedom Foundation publicly reveals and condemns the BitChat takedown order as illegal and authoritarian. The government never published the notice itself.",
+        tag: "repression",
+    },
+    {
+        date: "24–25 July 2026",
+        title: "Permanent barricades seal the protest site",
+        body: "Authorities begin erecting permanent barricades on all routes in and out of Jantar Mantar, effectively confining protesters and restricting freedom of movement.",
+        tag: "repression",
+    },
+    {
+        date: "25 July 2026",
+        title: "UN speaks on the right to protest",
+        body: "UN spokesperson Stéphane Dujarric states that people wishing to protest peacefully must be allowed to do so without fear of harassment, arrest or injury.",
+        tag: "international",
+    },
+    {
+        date: "25 July 2026",
+        title: "Nationwide candle march announced",
+        body: "CJP calls for a silent nationwide candle march on Sunday, 26 July at 6 PM outside every District Collector’s office across India, in memory of the injured and in protest against police brutality.",
+        tag: "escalation",
+    },
 ];
 
 export interface LedgerEntry {
@@ -76,83 +112,185 @@ export interface LedgerEntry {
 
 export const ledger: LedgerEntry[] = [
     {
-        claim: "Were pellet guns used on July 20?",
+        claim: "Is the BJP government violating the right to life by using pellet guns on protesters?",
         protesterAccount: "Multiple injured protesters and hospital records show clear pellet wounds. Videos appear to show CRPF/RAF personnel firing pump-action guns. This is the first reported use in Delhi protests.",
         sourceNote: "The Hindu, Outlook India, BOOM Live — 21–22 July 2026",
     },
     {
-        claim: "Were shots fired in Jehanabad during the protests?",
+        claim: "Is the BJP government violating the right to life by allowing shots to be fired on protesters?",
         protesterAccount: "Shots have been fired in Bihar's Jehanabad amid the ongoing protests.",
         sourceNote: "Video evidence: https://x.com/preeti_dog22864/status/2080513437122396359",
     },
     {
-        claim: "Did police in civil dress manhandle a female protester?",
+        claim: "Is the BJP government violating the right to dignity and bodily integrity through sexual harassment by police?",
         protesterAccount: "Police in civil dress manhandled a girl during the protest, amounting to sexual harassment.",
         sourceNote: "Video evidence: https://x.com/Vtxt21/status/2080487498393022834",
     },
     {
-        claim: "Was Delhi Police preparing to assault peaceful protesters?",
+        claim: "Is the BJP government violating the right to peaceful assembly by preparing to assault protesters?",
         protesterAccount: "Delhi police were seen preparing to assault peaceful protesters.",
         sourceNote: "Video evidence: https://x.com/ChekrishnaCk/status/2080488258157613306",
     },
     {
-        claim: "Were modified batons with nails used against protesters?",
+        claim: "Is the BJP government violating the right to life by using modified batons with nails?",
         protesterAccount: "Police used modified batons with nails protruding through them, posing a severe risk of grievous injury or death.",
         sourceNote: "Video evidence: https://x.com/MuraliGorati1/status/2080287954761846824",
     },
     {
-        claim: "Was a 16-year-old left critically injured during the protest?",
+        claim: "Is the BJP government violating the right to life of a minor by leaving a 16-year-old critically injured?",
         protesterAccount: "A 16-year-old was left critically injured and on the brink of death after being assaulted during the protest.",
         sourceNote: "Video evidence: https://x.com/Vishwaguru2026/status/2080602609514377688",
     },
     {
-        claim: "Were peaceful protesters assaulted by police?",
+        claim: "Is the BJP government violating the right to peaceful assembly by assaulting protesters?",
         protesterAccount: "Peaceful protesters were brutally assaulted by police personnel.",
         sourceNote: "Video evidence: https://x.com/ChapraZila/status/2080575312417677586",
     },
     {
-        claim: "Were lawyers blocked from accessing detained protesters?",
+        claim: "Is the BJP government violating the right to legal representation by blocking lawyers?",
         protesterAccount: "Lawyers were physically blocked from meeting and providing legal access to detained protesters, violating basic human rights.",
         sourceNote: "Multiple videos: https://x.com/TheDeshBhakt/status/2080344014705021021 and https://x.com/rishikeshlaw/status/2080583433903071654",
     },
     {
-        claim: "Did government officials misuse Aadhaar data?",
+        claim: "Is the BJP government violating the right to privacy by misusing Aadhaar data?",
         protesterAccount: "Government officials were caught misusing Aadhaar data, raising serious privacy violation concerns.",
         sourceNote: "Video evidence: https://x.com/azizkavish/status/2080353214021632105",
     },
     {
-        claim: "Was there state-orchestrated disinformation and bribery?",
+        claim: "Is the BJP government violating the right to free speech through state-orchestrated disinformation?",
         protesterAccount: "Evidence shows state-sponsored disinformation campaigns and bribery using public funds to manipulate narratives.",
         sourceNote: "Video evidence: https://x.com/voicesindians/status/2080360301082591269 and https://x.com/voicesindians/status/2080472228936949989",
     },
     {
-        claim: "Did officials engage in theft under color of authority?",
+        claim: "Is the BJP government violating the rule of law through theft under color of authority?",
         protesterAccount: "Government officials were involved in stealing food and other resources meant for protesters or the public (official misconduct/malfeasance).",
         sourceNote: "Video evidence: https://x.com/mr_mayank/status/2080552934958670209",
     },
     {
-        claim: "Was the blocking of BitChat's open-source code on GitHub unconstitutional?",
+        claim: "Is the BJP government an authoritarian government?",
         protesterAccount: "The government's order to GitHub to remove BitChat repositories is illegal and constitutes authoritarian censorship by a rogue government. The notice bypasses legal safeguards and targets citizens’ ability to speak when the state cuts off connectivity.",
         sourceNote: "Internet Freedom Foundation statement, 24 July 2026. Link: https://x.com/internetfreedom/status/2080586673977438351?s=20",
+    },
+    {
+        claim: "Is the BJP government violating the right to freedom of movement through wrongful confinement?",
+        protesterAccount: "Permanent barricades are being erected across all routes in and out of Jantar Mantar, confining protesters and restricting their movement.",
+        sourceNote: "Video evidence: https://x.com/rishikeshlaw/status/2080868341661741437",
     },
 ];
 
 export const slots = [
-    { label: "In Bihar's Jehanabad, shots have been fired.", tag: "Shots Fired", type: "video", url: "/cjp/videos/shots fired.mp4", source: "https://x.com/preeti_dog22864/status/2080513437122396359?s=20" },
-    { label: "Police in civil dress manhandled a girl in protest.", tag: "Sexual Harassment", type: "video", url: "/cjp/videos/sexual harrasment.mp4", source: "https://x.com/Vtxt21/status/2080487498393022834" },
-    { label: "Delhi police preparing to assult peaceful protesters.", tag: "Assult", type: "video", url: "/cjp/videos/preparation for assult.mp4", source: "https://x.com/ChekrishnaCk/status/2080488258157613306" },
-    { label: "Use of Pellet Gun", tag: "Attempted murder", type: "video", url: "/cjp/videos/pellet gun.mp4", source: "https://x.com/Delhiite_/status/2080596953470300285" },
-    { label: "Mis-use of Aadhar data by government officials.", tag: "Privacy Violation", type: "video", url: "/cjp/videos/misuse of adhar data.mp4", source: "https://x.com/azizkavish/status/2080353214021632105" },
-    { label: "State-Orchestrated Disinformation", tag: "State-Sponsored Censorship", type: "video", url: "/cjp/videos/govt bribary.mp4", source: "https://x.com/voicesindians/status/2080360301082591269" },
-    { label: "Propaganda through misappropriation of public funds.", tag: "State-Sponsored Censorship", type: "video", url: "/cjp/videos/bribary.mp4", source: "https://x.com/voicesindians/status/2080472228936949989" },
-    { label: "Official misconduct / Malfeasance in office", tag: "Theft under color of authority", type: "video", url: "/cjp/videos/foods stolen.mp4", source: "https://x.com/mr_mayank/status/2080552934958670209" },
-    { label: "16-Year-Old left critically injured during a protest.", tag: "Grievous bodily harm", type: "video", url: "/cjp/videos/brink of death.mp4", source: "https://x.com/Vishwaguru2026/status/2080602609514377688" },
-    { label: "Peaceful protesters assulted by Police.", tag: "Assult", type: "video", url: "/cjp/videos/assult.mp4", source: "https://x.com/ChapraZila/status/2080575312417677586" },
-    { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human right violation.mp4", source: "https://x.com/TheDeshBhakt/status/2080344014705021021" },
-    { label: "Use of modified batons with nails protruding through them.", tag: "Attempted murder", type: "video", url: "/cjp/videos/attempted murder.mp4", source: "https://x.com/MuraliGorati1/status/2080287954761846824?s=20" },
-    { label: "Lawyers blocked access to detained protesters.", tag: "Human Rights Violation", type: "video", url: "/cjp/videos/human rights violation.mp4", source: "https://x.com/rishikeshlaw/status/2080583433903071654" },
-    { label: "Police, CRPF, and RAF personnel deployed around the Jantar Mantar protests have been asked to remove their name tags.", tag: "Contempt of Court", type: "image", url: "/cjp/images/illegal act.png", source: "https://x.com/SaketGokhale/status/2080660880887632005?s=20" },
-    { label: "BJP government orders GitHub to remove BitChat.", tag: "Authoritarian censorship", type: "image", url: "/cjp/images/bitchat.png", source: "https://x.com/internetfreedom/status/2080586673977438351?s=20" },
+    {
+        label: "In Bihar's Jehanabad, shots have been fired.",
+        tag: "Shots Fired",
+        type: "video",
+        url: "/cjp/videos/shots fired.mp4",
+        source: "https://x.com/preeti_dog22864/status/2080513437122396359?s=20"
+    },
+    {
+        label: "Police in civil dress manhandled a girl in protest.",
+        tag: "Sexual Harassment",
+        type: "video",
+        url: "/cjp/videos/sexual harrasment.mp4",
+        source: "https://x.com/Vtxt21/status/2080487498393022834"
+    },
+    {
+        label: "Delhi police preparing to assult peaceful protesters.",
+        tag: "Assult",
+        type: "video",
+        url: "/cjp/videos/preparation for assult.mp4",
+        source: "https://x.com/ChekrishnaCk/status/2080488258157613306"
+    },
+    {
+        label: "Use of Pellet Gun",
+        tag: "Attempted murder",
+        type: "video",
+        url: "/cjp/videos/pellet gun.mp4",
+        source: "https://x.com/Delhiite_/status/2080596953470300285"
+    },
+    {
+        label: "Mis-use of Aadhar data by government officials.",
+        tag: "Privacy Violation",
+        type: "video",
+        url: "/cjp/videos/misuse of adhar data.mp4",
+        source: "https://x.com/azizkavish/status/2080353214021632105"
+    },
+    {
+        label: "State-Orchestrated Disinformation",
+        tag: "State-Sponsored Censorship",
+        type: "video",
+        url: "/cjp/videos/govt bribary.mp4",
+        source: "https://x.com/voicesindians/status/2080360301082591269"
+    },
+    {
+        label: "Propaganda through misappropriation of public funds.",
+        tag: "State-Sponsored Censorship",
+        type: "video",
+        url: "/cjp/videos/bribary.mp4",
+        source: "https://x.com/voicesindians/status/2080472228936949989"
+    },
+    {
+        label: "Official misconduct / Malfeasance in office",
+        tag: "Theft under color of authority",
+        type: "video",
+        url: "/cjp/videos/foods stolen.mp4",
+        source: "https://x.com/mr_mayank/status/2080552934958670209"
+    },
+    {
+        label: "16-Year-Old left critically injured during a protest.",
+        tag: "Grievous bodily harm",
+        type: "video",
+        url: "/cjp/videos/brink of death.mp4",
+        source: "https://x.com/Vishwaguru2026/status/2080602609514377688"
+    },
+    {
+        label: "Peaceful protesters assulted by Police.",
+        tag: "Assult",
+        type: "video",
+        url: "/cjp/videos/assult.mp4",
+        source: "https://x.com/ChapraZila/status/2080575312417677586"
+    },
+    {
+        label: "Lawyers blocked access to detained protesters.",
+        tag: "Human Rights Violation",
+        type: "video",
+        url: "/cjp/videos/human right violation.mp4",
+        source: "https://x.com/TheDeshBhakt/status/2080344014705021021"
+    },
+    {
+        label: "Use of modified batons with nails protruding through them.",
+        tag: "Attempted murder",
+        type: "video",
+        url: "/cjp/videos/attempted murder.mp4",
+        source: "https://x.com/MuraliGorati1/status/2080287954761846824?s=20"
+    },
+    {
+        label: "Lawyers blocked access to detained protesters.",
+        tag: "Human Rights Violation",
+        type: "video",
+        url: "/cjp/videos/human rights violation.mp4",
+        source: "https://x.com/rishikeshlaw/status/2080583433903071654"
+    },
+    {
+        label: "Police, CRPF, and RAF personnel deployed around the Jantar Mantar protests have been asked to remove their name tags.",
+        tag: "Contempt of Court",
+        type: "image",
+        url: "/cjp/images/illegal act.png",
+        source: "https://x.com/SaketGokhale/status/2080660880887632005?s=20"
+    },
+    {
+        label: "BJP government orders GitHub to remove BitChat.",
+        tag: "Authoritarian censorship",
+        type: "image",
+        url: "/cjp/images/bitchat.png",
+        source: "https://x.com/internetfreedom/status/2080586673977438351?s=20"
+    },
+    {
+        label: "Permanent Barricades being eracted across all routes in and out of Jantar Mantar",
+        tag: "Wrongful Confinement",
+        type: "video",
+        url: "/cjp/images/wrongful confinement.mp4",
+        source: "https://x.com/rishikeshlaw/status/2080868341661741437"
+    },
 ];
 
 export const pradhanNote = {
