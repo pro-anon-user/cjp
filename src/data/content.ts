@@ -132,6 +132,12 @@ export const timeline: TimelineEvent[] = [
         body: "Union Education Minister Dharmendra Pradhan sends his resignation letter to the Prime Minister.",
         tag: "escalation",
     },
+    {
+        date: "July 25, 2026",
+        title: "Government Accedes to CJP Demands; Jantar Mantar Protest Suspended",
+        body: "Following intense civil pressure, the government officially conceded to the Citizens for Justice and Peace (CJP) demands. CJP leadership announced a successful conclusion and formal suspension of the demonstration.",
+        tag: "aftermath"
+    }
 ];
 
 export interface LedgerEntry {
@@ -370,6 +376,13 @@ export const slots = [
         type: "video",
         url: "/cjp/videos/shots fired at students.mp4",
         source: "https://x.com/TheCockroachIND/status/2080980942685184438",
+    },
+    {
+        label: "Police open fire on student protesters in Siwan, Bihar",
+        tag: "Attempted Murder",
+        type: "video",
+        url: "/cjp/videos/open fire.mp4",
+        source: "https://x.com/firstbiharnews/status/2080938532944953825",
     },
 ];
 
