@@ -211,6 +211,11 @@ export const ledger: LedgerEntry[] = [
         protesterAccount: "Police are stopping food and even water from reaching the protest site, illegally questioning delivery workers. No law permits this form of collective starvation.",
         sourceNote: "Video evidence: https://x.com/Nher_who/status/2080920728829132915 & Photo evidence: https://x.com/JournoAshutosh/status/2080683843783471538",
     },
+    {
+        claim: "Is the BJP government engaging in institutional disinformation by utilizing official police channels to mask a ground-level blockade of essential supplies?",
+        protesterAccount: "Delhi Police issues an official clarification denying any blanket ban on app-based food deliveries, calling the reports 'factually incorrect'. Yet delivery apps continue showing the Jantar Mantar area as restricted, with food and water still being stopped on the ground.",
+        sourceNote: "Official post: https://x.com/DelhiPolice/status/2080936991613661264",
+    },
 ];
 
 export const slots = [
@@ -346,6 +351,13 @@ export const slots = [
         type: "video",
         url: "/cjp/videos/food blocked.mp4",
         source: "https://x.com/Nher_who/status/2080920728829132915",
+    },
+    {
+        label: "Delhi Police denies food delivery ban while apps show restrictions",
+        tag: "Institutional Disinformation",
+        type: "image",
+        url: "/cjp/images/delhi police in denial.png",
+        source: "https://x.com/DelhiPolice/status/2080936991613661264",
     },
 ];
 
