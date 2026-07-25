@@ -324,7 +324,7 @@ export const slots = [
         label: "Food deliveries to Jantar Mantar blocked by police",
         tag: "Endangerment of Life",
         type: "image",
-        url: "/cjp/videos/food blocked.png",
+        url: "/cjp/images/food blocked.png",
         source: "https://x.com/JournoAshutosh/status/2080683843783471538",
     },
     {

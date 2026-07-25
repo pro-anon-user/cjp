@@ -33,7 +33,7 @@ export default function Gallery() {
                   src={slot.url}
                   alt={slot.label}
                   loading="lazy"
-                  className="h-48 w-full object-cover sm:grayscale transition-all duration-300 sm:group-hover:grayscale-0 sm:h-56"
+                  className="cursor-pointer h-48 w-full object-cover sm:grayscale transition-all duration-300 sm:group-hover:grayscale-0 sm:h-56"
                 />
               )}
               <figcaption className="flex items-center justify-between border-t border-[#2A2620] px-4 py-3">
