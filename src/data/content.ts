@@ -288,7 +288,7 @@ export const slots = [
         label: "Permanent Barricades being eracted across all routes in and out of Jantar Mantar",
         tag: "Wrongful Confinement",
         type: "video",
-        url: "/cjp/images/wrongful confinement.mp4",
+        url: "/cjp/videos/wrongful confinement.mp4",
         source: "https://x.com/rishikeshlaw/status/2080868341661741437"
     },
 ];
